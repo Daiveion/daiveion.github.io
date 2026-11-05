@@ -261,6 +261,32 @@
   .block{display:flex;flex-direction:column;gap:14px}
   .block > h3 + *{margin-top:0}
 
+  /* gateway showcase */
+  .reflection{max-width:65ch;display:flex;flex-direction:column;gap:26px}
+  .reflection h3{
+    display:flex;align-items:baseline;gap:10px;margin-bottom:8px;
+  }
+  .reflection h3 .step{
+    font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--accent);font-weight:500;
+  }
+  .reflection p{margin:0}
+  .artifact{margin:36px 0 0;max-width:760px}
+  .artifact img{
+    display:block;width:100%;height:auto;border-radius:3px;
+    border:1px solid var(--rule);box-shadow:var(--shadow);background:var(--surface-2);
+  }
+  .artifact figcaption{
+    margin-top:10px;font-family:var(--mono);font-size:11.5px;letter-spacing:.03em;color:var(--ink-3);
+  }
+  .artifact .missing-art{display:none}
+  .artifact.missing img{display:none}
+  .artifact.missing .missing-art{
+    display:grid;place-items:center;aspect-ratio:16/9;border-radius:3px;
+    border:1px dashed var(--rule);background:var(--surface-2);
+    font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);
+  }
+
   footer{
     margin-top:56px;border-top:1px solid var(--rule);
     padding-block:24px 46px;
@@ -314,6 +340,7 @@
     <button class="tab" role="tab" id="tab-work" aria-controls="panel-work" aria-selected="false" data-target="work">Projects</button>
     <button class="tab" role="tab" id="tab-year" aria-controls="panel-year" aria-selected="false" data-target="year">Year in Review</button>
     <button class="tab" role="tab" id="tab-honors" aria-controls="panel-honors" aria-selected="false" data-target="honors">Honors Experiences</button>
+    <button class="tab" role="tab" id="tab-gateway" aria-controls="panel-gateway" aria-selected="false" data-target="gateway">Gateway</button>
   </div>
 </nav>
 
@@ -594,11 +621,44 @@
       </div>
     </section>
 
+    <!-- ================= GATEWAY ================= -->
+    <section data-panel="gateway" id="panel-gateway" role="tabpanel" aria-labelledby="tab-gateway" hidden>
+      <div class="sechead">
+        <h2>EagleVision: A Microscope for Every Student</h2>
+        <p>Prior Experience Showcase &middot; Gateway to Honors, Fall 2026</p>
+      </div>
+
+      <div class="reflection">
+        <div>
+          <h3><span class="step">What</span></h3>
+          <p>Over the past year, my co-founder Bahand and I built EagleVision, a platform that broadcasts a single microscope&rsquo;s view to every student&rsquo;s device. Many schools can only afford a few microscopes, so students crowd around one eyepiece and wait their turn. We designed and 3D-printed a low-cost system, secured a provisional patent, and piloted it with more than 100 elementary students. The project went on to win 1st Place Overall at the UC IT Expo and placed in the top 100 teams nationwide in Samsung&rsquo;s Solve for Tomorrow competition.</p>
+        </div>
+        <div>
+          <h3><span class="step">So What</span></h3>
+          <p>My biggest takeaway came from the classroom, not the awards. I assumed the engineering would be the hardest part, but working directly with students and teachers showed me what actually mattered: the system had to be simple enough for an eight-year-old to use without help. Every round of feedback changed our design more than any technical challenge did. I learned that listening to the people you serve is part of the engineering, not something that comes after it.</p>
+        </div>
+        <div>
+          <h3><span class="step">Now What</span></h3>
+          <p>This year I&rsquo;m applying for internships and taking on more technical coursework. Whether I&rsquo;m building software on a team or working on an ENED project, I plan to start by understanding the user&rsquo;s problem before writing a single line of code. When setbacks come, I&rsquo;ll treat them as feedback rather than failure.</p>
+        </div>
+        <div>
+          <h3><span class="step">Global Citizen Scholar</span></h3>
+          <p>To me, a Global Citizen Scholar uses what they learn to remove barriers for others. EagleVision showed me that engineering is most meaningful when it widens access, so that a student&rsquo;s school budget doesn&rsquo;t decide what they get to see and learn.</p>
+        </div>
+      </div>
+
+      <figure class="artifact">
+        <img src="gateway-artifact.jpg" alt="The EagleVision team on stage after winning 1st Place Overall at the UC IT Expo 2026" loading="lazy" onerror="this.parentNode.classList.add('missing')">
+        <div class="missing-art">Artifact photo coming soon</div>
+        <figcaption>Our team on stage after winning 1st Place Overall at the UC IT Expo 2026.</figcaption>
+      </figure>
+    </section>
+
   </main>
 
   <footer>
     <span>Daiveion Greenwade &middot; University of Cincinnati Honors Program</span>
-    <span>Last updated October 2026</span>
+    <span>Last updated November 2026</span>
     <a href="mailto:daiveion.greenwade@proton.me">Email</a>
     <a href="https://www.linkedin.com/in/daiveion">LinkedIn</a>
     <a href="https://github.com/daiveion">GitHub</a>
